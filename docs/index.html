@@ -1,354 +1,636 @@
-<!DOCTYPE html><html><head>
-<meta charset="utf-8">
-<title>github_test</title>
-<style>
-html {
-  height: 100%;
-  background-image: -webkit-radial-gradient(ellipse farthest-corner at center top, #000d4d 0%, #000105 100%);
-  background-image: radial-gradient(ellipse farthest-corner at center top, #000d4d 0%, #000105 100%);
-  cursor: move;
-}
+<!DOCTYPE html>
+<html lang="en" class="app">
+<head>
+  <meta charset="utf-8" />
+  <title>Musik | Web Application</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+ 
+ <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/app.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+  <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" />
+  <link rel="stylesheet" type="text/css" href="js/jPlayer/jplayer.flat.css" />
+  <link rel="stylesheet" type="text/css" href="css/beforeafter-content.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/beforeafter-settings.css" media="screen" />
 
-body {
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-</style>
+<script src="http://www.jq22.com/jquery/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="js/freshline/jquery.freshline.beforeafter.js"></script>
+  <script type="text/javascript" src="js/freshline/animadrag.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
 </head>
 
 <body>
+  <section class="vbox">
+    <header class="bg-black lter header header-md navbar navbar-fixed-top-xs">
+      <ul class="nav navbar-nav hidden-xs">
+        <li>
+          <a href="#" class="text-muted">
+            <i class="fa fa-indent text"></i>
+            <i class="fa fa-dedent text-active"></i>
+          </a>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-sm bg-white btn-icon rounded"><i class="fa fa-search"></i></button>
+            </span>
+            <input type="text" class="form-control input-sm no-border rounded" placeholder="Search songs, albums...">
+          </div>
+        </div>
+      </form>
+    </header>
 
+    <section>
+      <section class="hbox stretch">
+        <section id="content">
+          <section class="vbox">
+            <section class="w-f-md">
+              <section class="hbox stretch bg-black dker">
+                <!-- side content -->
+                <aside class="col-sm-5 no-padder" id="sidebar">
+                  <section class="vbox animated fadeInUp">
+                    <section class="scrollable">
+                      <div class="m-t-n-xxs item pos-rlt">
+                        <div class="top text-right">
+                          <span class="musicbar bg-success bg-empty inline m-r-lg m-t" style="width:25px;height:30px">
+                        <span class="bar1 a3 lter"></span>
+                          <span class="bar2 a5 lt"></span>
+                          <span class="bar3 a1 bg"></span>
+                          <span class="bar4 a4 dk"></span>
+                          <span class="bar5 a2 dker"></span>
+                          <span class="bar6 a6"></span>
+                          <span class="bar7 a7"></span>
+                          </span>
+                        </div>
+                        <div class="bottom gd bg-info wrapper-lg">
+                          <span class="pull-right text-sm">101,400 <br>Followers</span>
+                          <span class="h2 font-thin">Soph Ashe</span>
+                        </div>
+                        <div id="example3" class="beforeafter_slider_3" style="overflow:hidden; width:100%;height:200px">
+                          <ul>
+                            <li><img src="images/beforeafter_3/316253jas.jpg" alt="images/beforeafter_3/316253jas.jpg" />
+                              <div id="textbox_13">
+                                <div id="logo_13" class="fadeleft"></div>
+                              </div>
+                              <div id="textbox_13" class="before">
+                                <div id="title_13" class="fadeup">Start in my life</div>
+                              </div>
+                              <div id="textbox_13" class="after">
+                                <div id="title_13" class="fadeup">Feel Fine!&nbsp;&nbsp;</div>
+                              </div>
+                              <div id="textbox_13b" class="after">
+                                <div id="title_13b" class="fadeup"><i>Make my day</i></div>
+                              </div>
+                              <div id="textbox_13c" class="after">
+                                <div id="title_13c" class="fadeup"><i>kami,my opp</i></div>
+                              </div>
+                            </li>
+                            <li><img src="images/beforeafter_3/315989.jpg" alt="images/beforeafter_3/315989.jpg" />
+                              <div id="textbox_code" class="after">
+                                <div id="code" class="fadeup"></div>
+                              </div>
+                              <div id="textbox_green" class="before">
+                                <div id="green" class="fadeleft"></div>
+                              </div>
+                              <div id="textbox_green2" class="after">
+                                <div id="green2" class="fade"></div>
+                              </div>
+                              <div id="textbox_fish">
+                                <div id="fish" class="fadedown"></div>
+                              </div>
+                              <div id="textbox_points" class="after">
+                                <div id="points" class="faderight"></div>
+                              </div>
+                              <div id="textbox_points" class="after">
+                                <div id="points" class="faderight"></div>
+                              </div>
+                              <div id="textbox_points" class="before">
+                                <div id="points" class="faderight"></div>
+                              </div>
+                              <div id="textbox_14c" class="after">
+                                <div id="title_14c" class="fadeup">We are</div>
+                              </div>
+                              <div id="textbox_14a" class="after">
+                                <div id="title_14" class="fadeup">freshline</div>
+                              </div>
+                              <div id="textbox_14b" class="before">
+                                <div id="title_14" class="fadeup">fresh</div>
+                              </div>
+                            </li>                                                 
+                          </ul>
+                        </div>
+                      </div>
+                      <ul class=" list-group list-group-lg radius no-border no-bg m-t-n-xxs m-b-none auto" id="latest">
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div id="hoveraudio" class=" clear text-ellipsis">
+                            <span>The wheel of fortune</span>
+                            <span class="text-muted"> -- 03:30</span>
+                          </div>
+                          <div class="music-jump"></div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>you are my king</span>
+                            <span class="text-muted"> -- 02:37</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>初恋的小美好</span>
+                            <span class="text-muted"> -- 03:59</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>Lilac</span>
+                            <span class="text-muted"> -- 04:38</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span> 一人静</span>
+                            <span class="text-muted"> -- 04:38</span>
+                          </div>
+                        </li>
 
-<canvas id="canv" width="1349" height="404"></canvas>
-<script>
-var num = 200;
-var w = window.innerWidth;
-var h = window.innerHeight;
-var max = 100;
-var _x = 0;
-var _y = 0;
-var _z = 150;
-var dtr = function(d) {
-  return d * Math.PI / 180;
-};
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>Through My Blood</span>
+                            <span class="text-muted"> -- 04:04</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>Too Late To Say</span>
+                            <span class="text-muted"> -- 05:15</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>琥珀色の海へ</span>
+                            <span class="text-muted"> -- 03:21</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>からくりピエロ (instrumental)</span>
+                            <span class="text-muted"> -- 04:52</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>M04</span>
+                            <span class="text-muted"> -- 02:21</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>M35</span>
+                            <span class="text-muted"> -- 01:35</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>哈尔的移动城堡</span>
+                            <span class="text-muted"> -- 02:22</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>流れ星</span>
+                            <span class="text-muted"> -- 01:37</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>Memories</span>
+                            <span class="text-muted"> -- 05:15</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>それがあなたの幸せとしても</span>
+                            <span class="text-muted"> -- 04:29</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>Angel</span>
+                            <span class="text-muted"> -- 04:35</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
 
-var rnd = function() {
-  return Math.sin(Math.floor(Math.random() * 360) * Math.PI / 180);
-};
-var dist = function(p1, p2, p3) {
-  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2) + Math.pow(p2.z - p1.z, 2));
-};
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>兰若词</span>
+                            <span class="text-muted"> -- 04:35</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="jp-play-me m-r-sm pull-left">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <div class="clear text-ellipsis">
+                            <span>Pieces Of My Words-言の花-</span>
+                            <span class="text-muted"> -- 03:54</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                </aside>
 
-var cam = {
-  obj: {
-    x: _x,
-    y: _y,
-    z: _z
-  },
-  dest: {
-    x: 0,
-    y: 0,
-    z: 1
-  },
-  dist: {
-    x: 0,
-    y: 0,
-    z: 200
-  },
-  ang: {
-    cplane: 0,
-    splane: 0,
-    ctheta: 0,
-    stheta: 0
-  },
-  zoom: 1,
-  disp: {
-    x: w / 2,
-    y: h / 2,
-    z: 0
-  },
-  upd: function() {
-    cam.dist.x = cam.dest.x - cam.obj.x;
-    cam.dist.y = cam.dest.y - cam.obj.y;
-    cam.dist.z = cam.dest.z - cam.obj.z;
-    cam.ang.cplane = -cam.dist.z / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z);
-    cam.ang.splane = cam.dist.x / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z);
-    cam.ang.ctheta = Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z) / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.y * cam.dist.y + cam.dist.z * cam.dist.z);
-    cam.ang.stheta = -cam.dist.y / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.y * cam.dist.y + cam.dist.z * cam.dist.z);
-  }
-};
+                <section class="col-sm-4 no-padder bg">
+                  <section class="vbox">
+                    <section class="scrollable hover">
+                      <ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
 
-var trans = {
-  parts: {
-    sz: function(p, sz) {
-      return {
-        x: p.x * sz.x,
-        y: p.y * sz.y,
-        z: p.z * sz.z
-      };
-    },
-    rot: {
-      x: function(p, rot) {
-        return {
-          x: p.x,
-          y: p.y * Math.cos(dtr(rot.x)) - p.z * Math.sin(dtr(rot.x)),
-          z: p.y * Math.sin(dtr(rot.x)) + p.z * Math.cos(dtr(rot.x))
-        };
-      },
-      y: function(p, rot) {
-        return {
-          x: p.x * Math.cos(dtr(rot.y)) + p.z * Math.sin(dtr(rot.y)),
-          y: p.y,
-          z: -p.x * Math.sin(dtr(rot.y)) + p.z * Math.cos(dtr(rot.y))
-        };
-      },
-      z: function(p, rot) {
-        return {
-          x: p.x * Math.cos(dtr(rot.z)) - p.y * Math.sin(dtr(rot.z)),
-          y: p.x * Math.sin(dtr(rot.z)) + p.y * Math.cos(dtr(rot.z)),
-          z: p.z
-        };
-      }
-    },
-    pos: function(p, pos) {
-      return {
-        x: p.x + pos.x,
-        y: p.y + pos.y,
-        z: p.z + pos.z
-      };
-    }
-  },
-  pov: {
-    plane: function(p) {
-      return {
-        x: p.x * cam.ang.cplane + p.z * cam.ang.splane,
-        y: p.y,
-        z: p.x * -cam.ang.splane + p.z * cam.ang.cplane
-      };
-    },
-    theta: function(p) {
-      return {
-        x: p.x,
-        y: p.y * cam.ang.ctheta - p.z * cam.ang.stheta,
-        z: p.y * cam.ang.stheta + p.z * cam.ang.ctheta
-      };
-    },
-    set: function(p) {
-      return {
-        x: p.x - cam.obj.x,
-        y: p.y - cam.obj.y,
-        z: p.z - cam.obj.z
-      };
-    }
-  },
-  persp: function(p) {
-    return {
-      x: p.x * cam.dist.z / p.z * cam.zoom,
-      y: p.y * cam.dist.z / p.z * cam.zoom,
-      z: p.z * cam.zoom,
-      p: cam.dist.z / p.z
-    };
-  },
-  disp: function(p, disp) {
-    return {
-      x: p.x + disp.x,
-      y: -p.y + disp.y,
-      z: p.z + disp.z,
-      p: p.p
-    };
-  },
-  steps: function(_obj_, sz, rot, pos, disp) {
-    var _args = trans.parts.sz(_obj_, sz);
-    _args = trans.parts.rot.x(_args, rot);
-    _args = trans.parts.rot.y(_args, rot);
-    _args = trans.parts.rot.z(_args, rot);
-    _args = trans.parts.pos(_args, pos);
-    _args = trans.pov.plane(_args);
-    _args = trans.pov.theta(_args);
-    _args = trans.pov.set(_args);
-    _args = trans.persp(_args);
-    _args = trans.disp(_args, disp);
-    return _args;
-  }
-};
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/m0.jpg" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Little Town</span>
+                          <small class="text-muted">by Soph Ashe</small>
+                        </a>
+                        </li>
 
-(function() {
-  "use strict";
-  var threeD = function(param) {
-    this.transIn = {};
-    this.transOut = {};
-    this.transIn.vtx = (param.vtx);
-    this.transIn.sz = (param.sz);
-    this.transIn.rot = (param.rot);
-    this.transIn.pos = (param.pos);
-  };
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a1.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Get lacinia odio sem nec elit</span>
+                          <small class="text-muted">by Filex</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a2.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Donec sed odio du</span>
+                          <small class="text-muted">by Dan Doorack</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/logo/portrait.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Curabitur blandit tempu</span>
+                          <small class="text-muted">by Foxes</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a4.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Urna mollis ornare vel eu leo</span>
+                          <small class="text-muted">by Chris Fox</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a5.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Faucibus dolor auctor</span>
+                          <small class="text-muted">by Lauren Taylor</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a6.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Praesent commodo cursus magn</span>
+                          <small class="text-muted">by Chris Fox</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a7.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Vestibulum id</span>
+                          <small class="text-muted">by Milian</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a8.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Blandit tempu</span>
+                          <small class="text-muted">by Amanda Conlan</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a9.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Vestibulum ullamcorpe quis malesuada augue mco rpe</span>
+                          <small class="text-muted">by Dan Doorack</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a12.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Natis ipsum ac feugiat</span>
+                          <small class="text-muted">by Hamburg</small>
+                        </a>
+                        </li>
+                        <li class="list-group-item clearfix">
+                          <a href="#" class="jp-play-fun pull-right m-t-sm m-l text-md">
+                          <i class="icon-control-play text"></i>
+                          <i class="icon-control-pause text-active"></i>
+                        </a>
+                          <a href="#" class="pull-left thumb-sm m-r">
+                          <img src="images/a0.png" alt="...">
+                        </a>
+                          <a class="clear" href="#">
+                          <span class="block text-ellipsis">Sec condimentum au</span>
+                          <small class="text-muted">by Amanda Conlan</small>
+                        </a>
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                </section>
+                <section class="col-sm-3 no-padder lt">
+                  <section class="vbox">
+                    <section class="scrollable hover">
+                      <div class="m-t-n-xxs">
+                        <div class="item pos-rlt">
+                          <a href="#" class="item-overlay active opacity wrapper-md font-xs">
+                          <span class="block h3 font-bold text-info">Search</span>
+                          <span class="text-muted">Search the music you like</span>
+                          <span class="bottom wrapper-md block"> <i class="icon-arrow-right i-lg pull-right"></i></span>
+                        </a>
+                          <a href="#">
+                          <img class="img-full" src="images/314601.jpg" alt="...">
+                        </a>
+                        </div>
+                        <div class="item pos-rlt">
+                          <a href="#" class="item-overlay active opacity wrapper-md font-xs text-right">
+                          <span class="block h3 font-bold text-warning text-u-c">Listen</span>
+                          <span class="text-muted">Find the peace in your heart</span>
+                          <span class="bottom wrapper-md block"><i class="icon-arrow-right i-lg pull-left"></i> </span>
+                        </a>
+                          <a href="#">
+                          <img class="img-full" src="images/316718.jpg" alt="...">
+                        </a>
+                        </div>
+                        <div class="item pos-rlt">
+                          <a href="#" class="item-overlay active opacity wrapper-md font-xs">
+                          <span class="block h3 font-bold text-success text-u-c">Share</span>
+                          <span class="text-muted">Share the good songs with your loves</span>
+                          <span class="bottom wrapper-md block"> <i class="icon-arrow-right i-lg pull-right"></i></span>
+                        </a>
+                          <a href="#">
+                          <img class="img-full" src="images/317839.jpg" alt="...">
+                        </a>
+                        </div>
+                        <div class="item pos-rlt">
+                          <a href="#" class="item-overlay active opacity wrapper-md font-xs text-right">
+                          <span class="block h3 font-bold text-white text-u-c">Show</span>
+                          <span class="text-muted">Find, Listen & Share</span>
+                          <span class="bottom wrapper-md block"><i class="icon-arrow-right i-lg pull-left"></i> </span>
+                        </a>
+                          <a href="#">
+                          <img class="img-full" src="images/318897.jpg" alt="...">
+                        </a>
+                        </div>
+                        <div class="item pos-rlt">
+                          <a href="#" class="item-overlay active opacity wrapper-md font-xs">
+                          <span class="block h3 font-bold text-danger-lter text-u-c">Feeling</span>
+                          <span class="text-muted">Selected songs</span>
+                          <span class="bottom wrapper-md block"> <i class="icon-arrow-right i-lg pull-right"></i></span>
+                        </a>
+                          <a href="#">
+                          <img class="img-full" src="images/318334.jpg" alt="...">
+                        </a>
+                        </div>
+                      </div>
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </section>
+            <footer class="footer bg-success dker">
+              <div id="jp_container_N">
+                <div class="jp-type-playlist">
+                  <div id="jplayer_N" class="jp-jplayer hide"></div>
+                  <div class="jp-gui">
+                    <div class="jp-video-play hide">
+                      <a class="jp-video-play-icon">play</a>
+                    </div>
+                    <div class="jp-interface">
+                      <div class="jp-controls">
+                        <div><a class="jp-previous"><i class="icon-control-rewind i-lg"></i></a></div>
+                        <div>
+                          <a class="jp-play"><i class="icon-control-play i-2x"></i></a>
+                          <a class="jp-pause hid"><i class="icon-control-pause i-2x"></i></a>
+                        </div>
+                        <div><a class="jp-next"><i class="icon-control-forward i-lg"></i></a></div>
+                        <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
+                        <div>
+                          <a class="" data-toggle="dropdown" data-target="#playlist">
+                            <i class="icon-playlist"></i></a>
+                        </div>
+                        <div><img id="poster-ty" class="poster-img" src="images/a10.png"></div>
+                        <div class="jp-progress hidden-xs">
+                          <div class="jp-seek-bar dk">
+                            <div class="jp-play-bar bg">
 
-  threeD.prototype.vupd = function() {
-    this.transOut = trans.steps(
+                            </div>
+                            <div class="jp-title text-lt">
+                              <ul>
+                                <li></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted"></div>
+                        <div class="hidden-xs hidden-sm jp-duration text-xs text-muted"></div>
+                        <div class="hidden-xs hidden-sm">
+                          <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
+                          <a class="jp-unmute hid" title="unmute"><i class="icon-volume-off"></i></a>
+                        </div>
+                        <div class="hidden-xs hidden-sm jp-volume">
+                          <div class="jp-volume-bar dk volume-bor">
+                            <div class="jp-volume-bar-value lter "></div>
+                          </div>
+                        </div>
+                        <div>
+                          <a class="jp-shuffle" title="shuffle"><i class="icon-shuffle text-muted"></i></a>
+                          <a class="jp-shuffle-off hid" title="shuffle off"><i class="icon-shuffle text-lt"></i></a>
+                        </div>
+                        <div>
+                          <a class="jp-repeat" title="repeat"><i class="icon-loop text-muted"></i></a>
+                          <a class="jp-repeat-off hid" title="repeat off"><i class="icon-loop text-lt"></i></a>
+                        </div>
+                        <div class="hide">
+                          <a class="jp-full-screen" title="full screen"><i class="fa fa-expand"></i></a>
+                          <a class="jp-restore-screen" title="restore screen"><i class="fa fa-compress text-lt"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jp-playlist dropup" id="playlist">
+                    <ul class="dropdown-menu aside-xl dker">
+                      <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                      <li class="list-group-item"></li>
+                    </ul>
+                  </div>
+                  <div class="jp-no-solution hide">
+                    <span>Update Required</span> To play the media you will need to either update your browser to a recent
+                    version or update your  Flash plugin .
+                  </div>
+                </div>
+              </div>
+            </footer>
 
-      this.transIn.vtx,
-      this.transIn.sz,
-      this.transIn.rot,
-      this.transIn.pos,
-      cam.disp
-    );
-  };
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+      </section>
+    </section>
+  </section>
 
-  var Build = function() {
-    this.vel = 0.04;
-    this.lim = 360;
-    this.diff = 200;
-    this.initPos = 100;
-    this.toX = _x;
-    this.toY = _y;
-    this.go();
-  };
-
-  Build.prototype.go = function() {
-    this.canvas = document.getElementById("canv");
-    this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
-    this.$ = canv.getContext("2d");
-    this.$.globalCompositeOperation = 'source-over';
-    this.varr = [];
-    this.dist = [];
-    this.calc = [];
-
-    for (var i = 0, len = num; i < len; i++) {
-      this.add();
-    }
-
-    this.rotObj = {
-      x: 0,
-      y: 0,
-      z: 0
-    };
-    this.objSz = {
-      x: w / 5,
-      y: h / 5,
-      z: w / 5
-    };
-  };
-
-  Build.prototype.add = function() {
-    this.varr.push(new threeD({
-      vtx: {
-        x: rnd(),
-        y: rnd(),
-        z: rnd()
-      },
-      sz: {
-        x: 0,
-        y: 0,
-        z: 0
-      },
-      rot: {
-        x: 20,
-        y: -20,
-        z: 0
-      },
-      pos: {
-        x: this.diff * Math.sin(360 * Math.random() * Math.PI / 180),
-        y: this.diff * Math.sin(360 * Math.random() * Math.PI / 180),
-        z: this.diff * Math.sin(360 * Math.random() * Math.PI / 180)
-      }
-    }));
-    this.calc.push({
-      x: 360 * Math.random(),
-      y: 360 * Math.random(),
-      z: 360 * Math.random()
-    });
-  };
-
-  Build.prototype.upd = function() {
-    cam.obj.x += (this.toX - cam.obj.x) * 0.05;
-    cam.obj.y += (this.toY - cam.obj.y) * 0.05;
-  };
-
-  Build.prototype.draw = function() {
-    this.$.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    cam.upd();
-    this.rotObj.x += 0.1;
-    this.rotObj.y += 0.1;
-    this.rotObj.z += 0.1;
-
-    for (var i = 0; i < this.varr.length; i++) {
-      for (var val in this.calc[i]) {
-        if (this.calc[i].hasOwnProperty(val)) {
-          this.calc[i][val] += this.vel;
-          if (this.calc[i][val] > this.lim) this.calc[i][val] = 0;
-        }
-      }
-
-      this.varr[i].transIn.pos = {
-        x: this.diff * Math.cos(this.calc[i].x * Math.PI / 180),
-        y: this.diff * Math.sin(this.calc[i].y * Math.PI / 180),
-        z: this.diff * Math.sin(this.calc[i].z * Math.PI / 180)
-      };
-      this.varr[i].transIn.rot = this.rotObj;
-      this.varr[i].transIn.sz = this.objSz;
-      this.varr[i].vupd();
-      if (this.varr[i].transOut.p < 0) continue;
-      var g = this.$.createRadialGradient(this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p, this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p * 2);
-      this.$.globalCompositeOperation = 'lighter';
-      g.addColorStop(0, 'hsla(255, 255%, 255%, 1)');
-      g.addColorStop(.5, 'hsla(' + (i + 2) + ',85%, 40%,1)');
-      g.addColorStop(1, 'hsla(' + (i) + ',85%, 40%,.5)');
-      this.$.fillStyle = g;
-      this.$.beginPath();
-      this.$.arc(this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p * 2, 0, Math.PI * 2, false);
-      this.$.fill();
-      this.$.closePath();
-    }
-  };
-  Build.prototype.anim = function() {
-    window.requestAnimationFrame = (function() {
-      return window.requestAnimationFrame ||
-        function(callback, element) {
-          window.setTimeout(callback, 1000 / 60);
-        };
-    })();
-    var anim = function() {
-      this.upd();
-      this.draw();
-      window.requestAnimationFrame(anim);
-    }.bind(this);
-    window.requestAnimationFrame(anim);
-  };
-
-  Build.prototype.run = function() {
-    this.anim();
-
-    window.addEventListener('mousemove', function(e) {
-      this.toX = (e.clientX - this.canvas.width / 2) * -0.8;
-      this.toY = (e.clientY - this.canvas.height / 2) * 0.8;
-    }.bind(this));
-    window.addEventListener('touchmove', function(e) {
-      e.preventDefault();
-      this.toX = (e.touches[0].clientX - this.canvas.width / 2) * -0.8;
-      this.toY = (e.touches[0].clientY - this.canvas.height / 2) * 0.8;
-    }.bind(this));
-    window.addEventListener('mousedown', function(e) {
-      for (var i = 0; i < 100; i++) {
-        this.add();
-      }
-    }.bind(this));
-    window.addEventListener('touchstart', function(e) {
-      e.preventDefault();
-      for (var i = 0; i < 100; i++) {
-        this.add();
-      }
-    }.bind(this));
-  };
-  var app = new Build();
-  app.run();
-})();
-window.addEventListener('resize', function() {
-  canvas.width = w = window.innerWidth;
-  canvas.height = h = window.innerHeight;
-}, false);
-</script>
-
-
-</body></html>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/example.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/app.plugin.js"></script>
+  <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+</body>
+</html>
